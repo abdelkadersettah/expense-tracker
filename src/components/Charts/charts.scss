@@ -1,0 +1,19 @@
+@import "../../styles/index.scss";
+.chart {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: inherit;
+  & > * {
+    margin-bottom: 1rem;
+  }
+  &__title {
+    color: $primary-blue;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  &__container {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}

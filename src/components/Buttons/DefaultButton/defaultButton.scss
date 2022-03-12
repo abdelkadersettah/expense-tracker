@@ -1,0 +1,18 @@
+@import "../../../styles/index.scss";
+.default {
+  background-color: $green;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  color: $white;
+  transition: all 0.2s linear;
+  font-size: 0.8rem;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid $green;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $green-hover;
+    border-color: $green-hover;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../styles/index.scss";
+.secondary {
+  border: 1px solid $green;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  color: $green;
+  background-color: transparent;
+  transition: all 0.2s linear;
+  font-size: 0.8rem;
+  font-weight: 600;
+  outline: none;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+  }
+}

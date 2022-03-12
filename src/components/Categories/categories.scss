@@ -1,0 +1,50 @@
+@import "../../styles/index.scss";
+.categories {
+  background-color: $main-background;
+
+  padding: 1rem;
+  &__inner {
+    max-width: $page-width;
+    margin: 0 auto;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 01rem;
+  }
+
+  &__title {
+    color: $primary-blue;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  &__item {
+    background-color: $primary-blue;
+    padding: 0.3rem 0.5rem;
+    color: $white;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+  }
+  &__cta {
+    margin-left: 0.8rem;
+    align-self: center;
+
+    & img {
+      width: 22px;
+      height: 22px;
+      transition: all 0.2s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

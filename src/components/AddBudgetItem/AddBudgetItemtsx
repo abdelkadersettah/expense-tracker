@@ -1,0 +1,63 @@
+import "react-app-polyfill/ie11";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { Formik, Field, Form, FormikHelpers } from "formik";
+
+interface Values {
+  label: string;
+  date: Date;
+  amount: number;
+  category: string;
+}
+
+const AddBudgetItem = () => {
+  return (
+    <div>
+      <h1>Signup</h1>
+      <Formik
+        initialValues={{
+          label: "",
+          date: new Date(),
+          amount: 0,
+          category: "",
+        }}
+        onSubmit={(
+          values: Values,
+          { setSubmitting }: FormikHelpers<Values>
+        ) => {
+          setTimeout(() => {
+            alert(JSON.stringify(values, null, 2));
+            setSubmitting(false);
+          }, 500);
+        }}
+      >
+        <Form className="form">
+          <label htmlFor="label">Label</label>
+          <Field id="label" name="label" placeholder="Category" type={"text"} />
+
+          <label htmlFor="lastName">Date</label>
+          <Field id="date" name="date" placeholder="Date" type={"date"} />
+
+          <label htmlFor="amount">Amount</label>
+          <Field
+            id="amount"
+            name="amount"
+            placeholder="john@acme.com"
+            type="number"
+          />
+          <label htmlFor="amount">Amount</label>
+          <Field
+            id="amount"
+            name="amount"
+            placeholder="john@acme.com"
+            type="number"
+          />
+
+          <button type="submit">Submit</button>
+        </Form>
+      </Formik>
+    </div>
+  );
+};
+
+export default AddBudgetItem;
