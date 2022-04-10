@@ -26,4 +26,4 @@ you can try the APP in this link [Expense Tracker](https://track-your-money-dz.n
 ## Copyright
 
 Copyright (c) 2022 by [abdelkader settah](https://github.com/abdelkadersettah)
-Email settahkader@gmail.com
+
